@@ -1,0 +1,292 @@
+/* || General styles */
+html {
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+nav {
+  
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+/* || UTILITIES */
+.btn {
+  min-width: 80px;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.database-btn {
+  padding: 5px 10px;
+}
+
+.title {
+
+}
+
+.blur-color {
+  font-size: 14px !important;
+  color: hsl(214, 20%, 69%) !important;
+}
+
+.time-icon {
+  color: gray;
+  margin-bottom: -3px;
+}
+
+.author img {
+  background-color: aquamarine;
+  border-radius: 50%;
+}
+
+/* || Typography */
+
+/* || SITEWIDE */
+.blog-card {
+  background-color: #fff;
+  padding: 10px 30px 10px 10px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+}
+
+/* || Header */
+header {
+  max-width: 55%;
+  margin: 0 auto;
+  padding-bottom: 50px;
+}
+
+header .header {
+  display: flex;
+  justify-content: space-between;
+  height: 100px;
+  margin-bottom: 40px;
+}
+
+.container {
+  padding: 50px 0;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  gap: 25px;
+}
+
+nav ul li {
+  padding: 5px 10px;
+} 
+
+nav ul button {
+  width: 80px;
+  border: none;
+  border-radius: 5px;
+  background-color: #a881af;
+}
+
+nav ul li a {
+  font-weight: 800;
+  font-size: 20px;
+  color: #000;
+}
+
+/* || End Header */
+
+/* || Hero */
+header .hero {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 50px;
+}
+
+.hero .introduce p.content {
+  font-size: 50px;
+  font-weight: 1000;
+}
+
+.hero .introduce p.content .name {
+  font-size: 65px;
+  color: hsl(229.09deg 75.86% 65.88%);
+}
+
+
+.contacts-btn .btn:nth-of-type(1) {
+  background-image: url("https://img.freepik.com/premium-vector/beautiful-gradient-background_52683-82959.jpg");
+  background-size: cover;
+  color: #fff;
+}
+
+.contacts-btn .btn:nth-of-type(2) {
+  background-image: url("https://img.pikbest.com/backgrounds/20191207/beautiful-abstract-gradient-background-v_1609604jpg!sw800");
+  background-size: cover;
+  color: #fff;
+}
+
+
+.hero .profile-image {
+  display: flex;
+  align-items: center;
+}
+.hero .profile-image img {
+  border-radius: 10px;
+}
+
+
+
+/* || End Hero */
+
+/* Start main */
+
+main {
+  background-color: rgb(229, 228, 228);
+}
+
+main .container {
+  max-width: 55%;
+  margin: 0 auto;
+  display: flex;
+  gap: 50px;
+}
+
+/* Article */
+.container article {
+  flex: 1 1 80%;
+}
+
+.container article p.list-title {
+  font-weight: 700;
+  color: gray;
+  font-size: 26px;
+  position: relative;
+  padding-left: 45px;
+  margin-bottom: 45px;
+}
+
+.container article p.list-title::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: hsl(214deg 100% 67.49%);
+  width: 5px;
+  height: 100%;
+  border-radius: 5px;
+}
+
+.container aside{
+  flex: 1 1 20%;
+}
+
+.blog-card {
+  display: flex;
+  height: 300px;
+  gap: 20px;
+}
+
+.blog-card .img-content {
+
+}
+
+.img-content img {
+  width: 300px;
+  height: 285px;
+  object-fit: cover;
+}
+
+.blog-card .post-content {
+  flex: 1 1 55%;
+  
+}
+
+.blog-card .post-content span.subject {
+  background-color: #4158D0;
+  background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+  display: inline-block;
+}
+
+.blog-card .post-content p.title {
+  font-size: 26px;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+p.title a:hover {
+  text-decoration: underline;
+}
+
+p.title a {
+  color: black;
+}
+
+.blog-card .post-content .short-des{
+  color: hsl(216, 15%, 52%);
+  line-height: 1.4;
+}
+
+.blog-card .author  {
+  display: flex;
+  gap: 10px;
+}
+
+.blog-card .author .name {
+  display: block;
+}
+
+.blog-card .author .name a {
+  color: hsl(216, 15%, 52%);
+  font-weight: 700;
+}
+
+.blog-card .author .name a:hover {
+  color: hsl(216, 91%, 51%);
+}
+
+.blog-card span {
+  color: hsl(216, 15%, 52%);
+}
+/* 
+.info .reading-minutes{
+  color: hsl(214, 20%, 69%);
+} */
+
+/* End article */
+
+
+/* Start footer */
+
+footer {
+  max-width: 55%;
+  margin: 0 auto;
+  display: flex;
+}
