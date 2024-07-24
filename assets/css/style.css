@@ -181,7 +181,7 @@ main .container {
 
 /* Article */
 .container article {
-  flex: 1 1 80%;
+  flex: 1 1 60%;
 }
 
 .container article p.list-title {
@@ -210,7 +210,7 @@ main .container {
 
 .blog-card {
   display: flex;
-  height: 300px;
+  min-height: 300px;
   gap: 20px;
 }
 
@@ -241,6 +241,9 @@ main .container {
   font-weight: 700;
 }
 
+.database-btn a:hover {
+  color: #fff;
+}
 p.title a:hover {
   text-decoration: underline;
 }
@@ -275,18 +278,209 @@ p.title a {
 .blog-card span {
   color: hsl(216, 15%, 52%);
 }
-/* 
-.info .reading-minutes{
-  color: hsl(214, 20%, 69%);
-} */
+
 
 /* End article */
 
+/* Aside */
+aside > div {
+  margin-bottom: 50px;
+}
 
-/* Start footer */
+aside .title {
+  display: inline-block;
+  font-size: 26px;
+  font-weight: 700;
+  color: gray;
+  padding: 20px 0 30px 0;
+}
 
+aside .topics .title {
+  padding-bottom: 50px;
+}
+
+aside .topics .subject {
+  background-color: white;
+  margin-bottom: 10px;
+  border-radius: 22px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+aside .topics .subject span {
+  font-weight: 600;
+  color: hsl(216, 15%, 52%);
+}
+
+aside .title {
+  display: block;
+  text-align: center;
+}
+.icon-container {
+  padding: 10px 18px;
+  background-color: hsl(214, 32%, 91%);
+}
+
+.icon-container:hover ion-icon {
+  color: #fff;
+}
+
+.icon-container:hover {
+  background-color: hsl(229, 76%, 66%);
+  cursor: pointer;
+}
+
+ .subject ion-icon {
+  height: 20px;
+  width: 20px;
+  color: hsl(216, 15%, 52%);
+}
+
+.list-hash {
+  background-color: #fff;
+  padding: 40px 30px;
+  border-radius: 5px;
+}
+
+.list-hash span {
+  padding: 5px 5px;
+  background-color: hsl(214, 32%, 91%);;
+  display: inline-block;
+  margin-bottom: 5px;
+  font-size: 13px;
+  font-weight: 700;
+  color: hsl(216, 15%, 52%);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.let-talk-content {
+  background-color: #fff;
+  padding: 30px 30px;
+  font-size: 15px;
+  line-height: 1.8;
+  color: hsl(216, 15%, 52%);
+  border-radius: 5px;
+}
+
+.list-icon ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.list-icon ul li {
+  background-color: ;
+}
+
+.list-icon ul li ion-icon {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+  color: hsl(235, 86%, 65%);
+}
+
+.letter-content {
+  background-color: #fff;
+  padding: 30px 30px;
+  font-size: 15px;
+  line-height: 1.8;
+  color: hsl(216, 15%, 52%);
+  border-radius: 5px;
+}
+
+.letter-content input {
+  background-color: hsl(214, 32%, 91%);
+  border: none;
+  color: hsl(216, 15%, 52%);
+  padding: 10px 20px;
+  border-radius: 50px;
+  margin-bottom: 10px;
+}
+
+.btn-container {
+  text-align: center;
+}
+
+.btn-container button {
+  background-color: hsl(229, 76%, 66%);
+  border-radius: 50px;
+  
+}
+
+.load_more-btn {
+  text-align: center;
+}
+
+.load_more-btn button {
+  background-color: #a881af;
+}
+/* End aside */
+
+/* Start .footer */
 footer {
+  border-bottom: 1px solid #4158D0;
+}
+
+.footer {
   max-width: 55%;
   margin: 0 auto;
   display: flex;
+  gap: 20px;
+  padding: 50px 0;
+}
+
+.footer .col-1 {
+  flex: 1 1 40%;
+}
+
+.footer .col-2 {
+  flex: 1 1 30%;
+}
+
+.footer .col-3 {
+  flex: 1 1 30%;
+}
+
+.slogan {
+  display: flex;
+  align-items: center;
+}
+
+.slogan span {
+  font-family: "Playwrite DK Uloopet", cursive;
+  font-size: 24px;
+  font-weight: 1000;
+}
+
+.col-1 p {
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  color: hsl(216, 15%, 52%);
+  line-height: 1.8;
+  margin: 0;
+}
+
+.footer dd, dt {
+  margin: 0;
+  line-height: 1.8;
+  font-size: 18px;
+}
+
+.footer dt {
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.copy-right {
+  text-align: center;
+  font-size: 14px;
 }
